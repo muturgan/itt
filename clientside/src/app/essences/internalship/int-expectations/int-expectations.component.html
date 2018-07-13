@@ -1,0 +1,11 @@
+<section id="bg5" style="background-image: url(assets/internalship/img/bg5.jpg)">
+  <div class="cont">
+    <p class="bg-header bg5-header">Наши ожидания</p>
+    <div class="bg5__items">
+      <app-int-expectations-item
+        *ngFor="let expectationData of expectationsData"
+        [expectationData]="expectationData"
+      ></app-int-expectations-item>
+    </div>
+  </div>
+</section>

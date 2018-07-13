@@ -1,0 +1,91 @@
+<div id="map" class="container-fluid">
+  <div class="row">
+    <div id="map__area" class="map__area" yaMap>
+
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="map__body">
+          <p class="map__body-footer">{{ 'map.footer' | translate }}</p>
+          <ul class="map__body-ul">
+            <li class="map__body-li">
+              <strong class="map__body-str">{{ 'map.items.phone.text' | translate }}</strong>
+              <a href="tel:+7 (4872) 52-59-50" class="map__body-link">{{ 'map.items.phone.value' | translate }}</a>
+            </li>
+            <li class="map__body-li">
+              <strong class="map__body-str">{{ 'map.items.email.text' | translate }}</strong>
+              <a href="{{ 'map.items.email.value' | translate }}" class="map__body-link">{{ 'map.items.email.value' | translate }}</a>
+            </li>
+            <li class="map__body-li">
+              <strong class="map__body-str">{{ 'map.items.address.text' | translate }}</strong>
+              {{ 'map.items.address.value' | translate }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="bg7" class="container-fluid">
+  <div class="row">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-5">
+          <p class="bg__header bg7__header">{{ 'map.bgHeader' | translate }}</p>
+          <p class="bg__desc bg7__desc">{{ 'map.bgDesc' | translate }}</p>
+        </div>
+        <div class="col-lg-4 col-md-5">
+          <a
+            href="https://www.facebook.com/ittest.ru"
+            target="_blank"
+            class="bg7__link"
+            >
+              <!-- <i
+                class="fab fa-facebook"
+                aria-hidden="true"
+              ></i> -->
+              <fa-icon
+                [icon]="faFacebook"
+                [fixedWidth]="true"
+                size="2x"
+                class="map-svg-icons"
+                >
+              </fa-icon>
+              {{ 'map.faFacebook.text' | translate }}
+          </a>
+
+          <a
+            href="https://vk.com/tulaittest"
+            class="bg7__link"
+            target="_blank"
+            >
+              <fa-icon
+                [icon]="faVk"
+                [fixedWidth]="true"
+                size="2x"
+                class="svg-icons"
+                >
+              </fa-icon>
+              {{ 'map.faVk.text' | translate }}
+          </a>
+
+          <a
+            href="javascript:void(0);"
+            class="bg7__link"
+            (click)="showCallback()"
+            >
+              <fa-icon
+                [icon]="faPencilAlt"
+                [fixedWidth]="true"
+                size="2x"
+                class="svg-icons"
+                >
+              </fa-icon>
+              {{ 'map.faPencil.text' | translate }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

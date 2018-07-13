@@ -1,0 +1,12 @@
+<section id="bg1" [style.background-image]="backgroundImgPath">
+  <div class="cont bg1__circles">
+
+    <app-int-circle
+      *ngFor="let circleData of circlesData"
+      [circleData]="circleData"
+      (backgroundChanged)="onChangeBackground($event)"
+    ></app-int-circle>
+
+  </div>
+  <img src="assets/internalship/img/man.png" class="bg1-man">
+</section>

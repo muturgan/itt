@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+/* landing dependencies */
+@import "./src/assets/custom-styles/variables";
+@import "~ng-uikit-pro-standard/assets/scss/bootstrap/bootstrap.scss";
+@import "~ng-uikit-pro-standard/assets/scss/mdb.scss";
+@import "./src/assets/custom-styles/fixes_mdb";
+@import "./src/assets/custom-styles/global.scss";
+@import "./src/assets/custom-styles/fonts";
+@import "./src/assets/custom-styles/switch";
+@import "./src/assets/landing/styles"; 
+@import "./src/assets/landing/desktop";
+@import "./src/assets/landing/notebook";
+@import "./src/assets/landing/notebook_small";
+@import "./src/assets/landing/tablet";
+@import "./src/assets/landing/mobile";
+
+/* internalship dependencies */
+@import "./src/assets/fonts/Azoft/stylesheet";
+@import "./src/assets/fonts/SegoeUI/stylesheet";
+@import "./src/assets/fonts/FontAwesome/font-awesome.min";
+@import "./src/assets/internalship/css/slick-theme";
+@import "./src/assets/internalship/css/style";

@@ -1,0 +1,53 @@
+<!-- <div class="vacancy__slide" attr.data-img="{{data.img}}">
+  <p class="vacancy__slide-title"> {{ data.position }} </p>
+  <p class="vacancy__slide-subtitle">от <mark> {{ data.salary }} </mark> до вычета НДФЛ</p>
+  <div class="vacancy__slide-content">
+    <p><span class="upcase">Опыт работы:</span> {{ data.experience }} </p>
+    <p><span class="upcase">Стажировка:</span> {{ data.internship }} </p>
+  </div>
+</div> -->
+
+<div class="vacancy__slider slick-initialized slick-slider slick-dotted" role="toolbar">
+  <button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" aria-disabled="false" style="display: block;">
+    Previous
+  </button>
+
+  <div aria-live="polite" class="slick-list draggable">
+    <div class="slick-track" style="opacity: 1; width: 1012px; transform: translate3d(-506px, 0px, 0px);" role="listbox">
+
+      <div class="vacancy__slide slick-slide" data-img="/img/bg2_img1.jpg" data-slick-index="0" aria-hidden="true" style="width: 506px;" tabindex="-1" role="option" aria-describedby="slick-slide00">
+        <p class="vacancy__slide-title">Стажер-тестировщик/ QA beginner</p>
+        <p class="vacancy__slide-subtitle">от<mark> 20 000 руб. </mark>до вычета НДФЛ</p>
+        <div class="vacancy__slide-content">
+          <p><span class="upcase">Опыт работы:</span> не требуется</p>
+          <p><span class="upcase">Стажировка:</span> полный день</p>
+        </div>
+      </div>
+
+      <div class="vacancy__slide slick-slide slick-current slick-active" data-img="/img/bg3_img1.jpg" data-slick-index="1" aria-hidden="false" style="width: 506px;" tabindex="-1" role="option" aria-describedby="slick-slide01">
+        <p class="vacancy__slide-title">Тестировщик/QA</p>
+        <p class="vacancy__slide-subtitle">от<mark> 50 000 руб. </mark>до вычета НДФЛ</p>
+        <div class="vacancy__slide-content">
+          <p>Опыт работы: от 3 лет</p>
+          <p>Стажировка: по результату собеседования</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <button type="button" data-role="none" class="slick-next slick-arrow slick-disabled" aria-label="Next" role="button" style="display: block;" aria-disabled="true">
+    Next
+  </button>
+
+  <ul class="slick-dots" style="display: block;" role="tablist">
+    <li class="" aria-hidden="true" role="presentation" aria-selected="true" aria-controls="navigation00" id="slick-slide00">
+      <button type="button" data-role="none" role="button" tabindex="0">1</button>
+    </li>
+    <li aria-hidden="false" role="presentation" aria-selected="false" aria-controls="navigation01" id="slick-slide01" class="slick-active">
+      <button type="button" data-role="none" role="button" tabindex="0">2</button>
+    </li>
+  </ul>
+</div>
+
+<div class="vacancy__slider-img" style="background-image: url('/img/bg3_img1.jpg');"></div>

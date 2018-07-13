@@ -1,0 +1,51 @@
+<main [@fadeInAnimation] class="pt-0">
+    <!--Subscription Form-->
+    <form (ngSubmit)="save()">
+        <p class="mt-5 h5 text-center mb-4">{{ user.username }} ({{ userId }})</p>
+
+        <hr>
+        <!-- Switch -->
+        <div class="switch mdb-color-switch">
+            User is 
+            <label>
+                Inactive
+                <input type="checkbox" [attr.checked]="user.is_active ? true : undefined" (change)="changeUserStatus($event)">        
+                <span class="lever"></span>
+                Active
+            </label>
+        </div> 
+        <br>
+        
+        <div class="md-form">
+            <i class="fa fa-user prefix grey-text"></i>
+            <input type="text" id="form3" class="form-control" name="username" [(ngModel)]="user.username" mdbActive value="{{user.username}}">
+            <label for="form3">User's name</label>
+        </div>
+        
+        <div class="md-form">
+            <i class="fa fa-envelope prefix grey-text"></i>
+            <input type="text" id="form2" class="form-control" name="email" mdbActive [(ngModel)]="user.email" value="{{user.email}}">
+            <label for="form2">User's email</label>
+        </div>
+
+        <div class="md-form">
+            <i class="fa fa-key prefix grey-text"></i>
+            <input type="password" id="form4" name="password" [(ngModel)]="user.password" class="form-control" mdbActive>
+            <label for="form2">User's new password</label>
+        </div>
+
+        <div class="md-form">
+            <i class="fa fa-key prefix grey-text"></i>
+            <input type="password" id="form5" class="form-control" mdbActive>
+            <label for="form2">Confirm new password</label>
+        </div>
+
+        <div class="text-center">
+            <button class="btn btn-success waves-light" mdbRippleRadius routerLink="../">Save <i class="fa fa-check ml-1"></i></button>
+            <button class="btn btn-info waves-light" mdbRippleRadius>Apply <i class="fa fa-check ml-1"></i></button>
+            <span class="btn btn-dark waves-light" mdbRippleRadius routerLink="../">Cancel <i class="fa fa-close ml-1"></i></span>
+        </div> 
+
+    </form>
+    <!--Subscription Form-->
+</main>

@@ -1,0 +1,83 @@
+<!--Body-->
+<app-alert></app-alert>
+<div class="modal-body" [@fadeInAnimation]>
+    <form name="form" (ngSubmit)="f.form.valid && register()" #f="ngForm" novalidate>
+            <div class="md-form form-sm">
+            <i class="fa fa-user prefix"></i>
+            <input mdbActive type="text" name="username" [(ngModel)]="model.username" #username="ngModel" id="form27" class="form-control">
+            <label for="form24">Your name</label>
+        </div>
+
+        <div class="md-form form-sm">
+            <i class="fa fa-envelope prefix"></i>
+            <input mdbActive type="text" name="email" [(ngModel)]="model.email" #password="ngModel" id="form24" class="form-control">
+            <label for="form24">Your email</label>
+        </div>
+
+        <div class="md-form form-sm">
+            <i class="fa fa-lock prefix"></i>
+            <input mdbActive type="password" name="password" [(ngModel)]="model.password" #password="ngModel" id="form25" class="form-control">
+            <label for="form25">Your password</label>
+        </div>
+
+        <div class="md-form form-sm">
+            <i class="fa fa-lock prefix"></i>
+            <input mdbActive type="password" name="confirmPassword" [(ngModel)]="model.confirmPassword" #confirmPassword="ngModel" id="form26" class="form-control">
+            <label for="form26">Repeat password</label>
+        </div>
+
+        <div class="text-center form-sm mt-2">
+            <button class="btn btn-info waves-light" mdbRippleRadius>Sign up <i class="fa fa-sign-in ml-1"></i></button>
+        </div>
+    </form>
+</div>
+
+<!--
+<div class="col-md-6 col-md-offset-3">
+    <h2>Register</h2>
+    <form name="form" (ngSubmit)="f.form.valid && register()" #f="ngForm" novalidate>
+        <div class="form-group" [ngClass]="{ 'has-error': f.submitted }">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" name="username" [(ngModel)]="model.username" #username="ngModel" required />
+            <div *ngIf="f.submitted" class="help-block">Username is required</div>
+        </div>
+        <div class="form-group" [ngClass]="{ 'has-error': f.submitted }">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" name="email" [(ngModel)]="model.email" #password="ngModel" required />
+            <div *ngIf="f.submitted" class="help-block">Email is required</div>
+        </div>
+        <div class="form-group" [ngClass]="{ 'has-error': f.submitted }">
+            <label for="password">Password</label>
+            <input 
+                type="password" 
+                class="form-control" 
+                appValidateEqual="confirmPassword" 
+                reverse="true" 
+                name="password" 
+                [(ngModel)]="model.password" 
+                #password="ngModel" 
+                required 
+            />
+            <div *ngIf="f.submitted" class="help-block">Password is required</div>
+        </div>
+        <div class="form-group" [ngClass]="{ 'has-error': f.submitted }">
+            <label for="confirmPassword">Confirm Password</label>
+            <input 
+                type="password" 
+                class="form-control" 
+                appValidateEqual="password" 
+                name="confirmPassword" 
+                [(ngModel)]="model.confirmPassword" 
+                #confirmPassword="ngModel" 
+                required 
+            />
+            <div *ngIf="f.submitted" class="help-block">Password mismatch</div>
+        </div>
+        <div class="form-group">
+            <button [disabled]="loading" class="btn btn-primary">Register</button>
+            <img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+            <!-<a [routerLink]="['/login']" class="btn btn-link">Cancel</a>->
+        </div>
+    </form>
+</div>
+-->

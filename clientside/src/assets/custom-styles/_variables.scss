@@ -1,0 +1,20 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1220px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1220px
+);
+
+/*MDB path resolve*/
+$roboto-font-path: '~ng-uikit-pro-standard/assets/font/roboto/';
+$image-path: '~ng-uikit-pro-standard/assets/img/';
+/*End of MDB path resolve*/
+$warning-color-dark: #e64a19;

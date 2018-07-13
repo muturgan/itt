@@ -1,0 +1,29 @@
+<section id="bg7" #section7>
+  <p class="bg-header bg7-header cont">как это работает</p>
+  <div class="bg7__items">
+    <div class="bg7__item-left">
+      <p>
+        Успешно прошедшие первичный отбор и собеседования стажеры объединяются в группу 6-10 человек.
+        Обучение проходит очно - в офисе компании в режиме полного рабочего дня с 9 до 18 часов по будням.
+      </p>
+      <p>
+        Во время прохождения программы проводится контроль знаний, примерно 3-4 раза за период.
+        По результатам контроля знаний оценивается потенциал, усердность и желание стажера учиться и развиваться.
+      </p>
+      <p>
+        Каждому стажеру предоставляется рабочее место, ноутбук, материалы по темам.
+        В период практики - наставник из числадействующих опытных тестировщиков.
+      </p>
+      <img src="assets/internalship/img/bg7__left.png" alt="" class="bg7__item-img">
+    </div>
+    <div class="bg7__item-right">
+      <img src="assets/internalship/img/bg7__right.png" alt="" class="bg7__item-img">
+      <p class="bg7__item-action"><b>В программу стажировки</b> можно <b>попасть</b> пройдя тест и</p>
+      <a class="bg7__item-link" (click)="toggleForm(section7)">
+        <span class="fs-28">{{ '{' }}</span>заполнив анкету<span class="fs-28">{{ '}' }}</span>
+      </a>
+    </div>
+  </div>
+
+  <app-int-questions-form></app-int-questions-form>
+</section>

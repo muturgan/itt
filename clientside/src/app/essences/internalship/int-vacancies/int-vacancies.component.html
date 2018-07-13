@@ -1,0 +1,62 @@
+<!-- 
+    <section id="bg2">
+      <div class="cont">
+        <p class="bg2-header bg-header">вакансии</p>
+        <div class="vacancy__slider-wrap">
+          <div class="vacancy__slider">
+
+            <app-int-vacancy
+              *ngFor="let data of vacanciesData"
+              [data]="data"
+            ></app-int-vacancy>
+
+          </div>
+          <div class="vacancy__slider-img"></div>
+        </div>
+      </div>
+    </section> -->
+
+    
+<section id="bg2">
+  <div class="cont">
+    <div class="vacancy__slider-wrap">
+
+      <div class="vacancy-snippet vacancy-flex-item">
+
+        <div id="header-item" class="vacancy-snippet-item" style="flex-basis: 25%">
+            <p class="vacancy-header bg-header">вакансии</p>
+        </div>
+
+        <div class="vacancy-snippet-item" style="flex-basis: 5%"></div>
+
+        <div class="vacancy-snippet-item" style="flex-basis: 15%">
+            <p class="vacancy-position vacancy__slide-title">{{ currentVision.position_str1 }}</p>
+            <p class="vacancy-position vacancy__slide-title">{{ currentVision.position_str2 }}</p>
+        </div>
+
+        <div id="salary-item" class="vacancy-snippet-item" style="flex-basis: 15%">
+            <p class="vacancy-salary">от <mark>{{ currentVision.salary }}</mark> до вычета НДФЛ</p>
+        </div>
+
+        <div class="vacancy-snippet-item" style="flex-basis: 15%">
+            <p class="vacancy-experience"><span class="upcase">Опыт работы:</span> {{ currentVision.experience }}</p>
+            <p class="vacancy-internship"><span class="upcase">Стажировка:</span> {{ currentVision.internship }}</p>
+        </div>
+
+        <div class="vacancy-snippet-item" style="flex-basis: 15%"></div>
+
+        <div id="vacancy-toggler-holder" class="vacancy-snippet-item" style="flex-basis: 10%">
+          <div #firstToggler name="0" class="vacancy-toggler active" (click)="toggleVacancy($event.target, firstToggler, secondToggler)"></div>
+          <div #secondToggler name="1" class="vacancy-toggler" (click)="toggleVacancy($event.target, firstToggler, secondToggler)"></div>
+        </div>
+        
+      </div>
+
+      <div
+        class="vacancy__slider-img vacancy-flex-item"
+        [style.background-image]="currentVision.img"
+      ></div>
+
+    </div>
+  </div>
+</section>

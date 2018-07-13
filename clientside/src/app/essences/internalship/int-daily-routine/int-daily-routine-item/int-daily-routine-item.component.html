@@ -1,0 +1,18 @@
+<!-- <div class="bg8__item" [data-img]="lessonData.img"> -->
+<div
+  #lessonItem
+  class="bg8__item"
+  attr.data-img="{{lessonData.img}}"
+  attr.data-index="{{lessonData.index}}"
+  (mouseenter)="showLessonImg($event.target)"
+  (mouseleave)="hideLessonImg()"
+  (click)="setDefaultSectionBackgroundImgPath($event.target)"
+  (click)="setActiveLesson()"
+  >
+  <div class="bg8__item-body">
+    <p class="bg8__item-header"> {{ lessonData.duration }} </p>
+    <div class="bg8__item-desc">
+      <p> {{ lessonData.description }} </p>
+    </div>
+  </div>
+</div>

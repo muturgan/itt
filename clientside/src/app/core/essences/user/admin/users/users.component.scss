@@ -1,0 +1,15 @@
+th, td {
+    vertical-align: middle;
+}
+main {
+    margin: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+@media (min-width: 1440px) {
+    main {
+        margin: 0px;
+        padding-left: 140px;
+        padding-right: 140px;
+    }
+}

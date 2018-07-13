@@ -1,0 +1,100 @@
+
+    <form action="/" class="questions__form">
+      <div class="cont">
+        <div class="questions__form-header">
+          <p class="questions-header">анкета</p>
+          <p class="questions-subheader">для соискателя на должность стажера-тестировщика.</p>
+          <a class="bg7__item-link">&times;</a>
+        </div>
+      <div class="questions__form-body">
+
+      <!-- line form -->
+      <div class="line-form">
+        <div class="col-1"><input type="text" name="name" placeholder="ФИО, Телефон"></div>
+      </div>
+      <!-- line form -->
+
+      <!-- line form -->
+      <div class="line-form">
+        <div class="col-3"><input type="text" name="email" placeholder="E-mail"></div>
+        <div class="col-3"><input type="text" name="date" placeholder="Дата заполнения"></div>
+        <div class="col-3"><span class="empty">с <span class="td-un">13.40</span> по <span class="td-un">16.00</span></span></div>
+      </div>
+      <!-- line form -->
+
+      <div class="padding"></div>
+
+      <!-- line form -->
+      <div class="line-form">
+        <div class="col-1">
+          <p class="line__form-header">1. Уровень Вашего образования (включая курсы, тренинги, самообразование и прочее)?</p>
+          <input type="text" name="obrazovanie"  placeholder="">
+        </div>
+      </div>
+      <!-- line form -->
+
+      <!-- line form -->
+      <div class="line-form">
+        <div class="col-1">
+          <p class="line__form-header">
+            2. Степень Вашего отношения к IT отрасли в широком смысле? Какие сферы данной отрасли Вам близки? Ваш опыт в данных сферах?
+          </p>
+          <input type="text" name="otnoshenie_it" placeholder="">
+        </div>
+      </div>
+      <!-- line form -->
+
+      <!-- line form -->
+        <div class="line-form">
+          <div class="col-1">
+            <p class="line__form-header">
+              <b>
+                3. Почему Вы решили стать инженером по тестированию? Кто такой «тестировщик»?
+                <br>
+                Назовите необходимые качества хорошего «тестировщика»?
+              </b>
+            </p>
+            <input type="text" name="why" placeholder="">
+          </div>
+        </div>
+        <!-- line form -->
+
+        <!-- line form -->
+        <div class="line-form">
+          <div class="col-1">
+            <p class="line__form-header"><b>16. Какая форма записи IP-адреса является верной?</b></p>
+            <div class="select-box">
+              <!-- defoult * FOR BUTTON SEND -->
+              <input type="radio" name="question_ip" value="" style="display: none;" checked>
+              <!-- /defoult * -->
+              <div class="col-4">
+                <input type="radio" name="question_ip" id="question_ip_var1" value="1">
+                <label for="question_ip_var1"><span>а) 317.14.542.3</span></label>
+              </div>
+              <div class="col-4">
+                <input type="radio" name="question_ip" id="question_ip_var2" value="2">
+                <label for="question_ip_var2"><span>б) 0x25.209.0xf0.1</span></label>
+              </div>
+              <div class="col-4">
+                <input type="radio" name="question_ip" id="question_ip_var3" value="3">
+                <label for="question_ip_var3"><span>в) fe80:a1aa:48fc:f6d4:69a6</span></label>
+              </div>
+              <div class="col-4">
+                <input type="radio" name="question_ip" id="question_ip_var4" value="4">
+                <label for="question_ip_var4"><span>г) www.yandex.ru</span></label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- line form -->
+
+        </div>
+        <div class="questions__form-footer">
+          <div class="submit__button">
+            <span class="submit__button-process"></span>
+            <span>{{ '{' }}отправить анкету{{ '}' }}</span>
+          </div>
+          <input type="submit" class="hidden">
+        </div>
+      </div>
+    </form>

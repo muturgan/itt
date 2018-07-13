@@ -1,0 +1,100 @@
+
+    <section id="bg6">
+      <div class="cont">
+      <img src="assets/internalship/img/bg6_imgleft.jpg" class="bg6__steps-left" alt="">
+      <p class="bg-header bg6-header">программа стажировки:</p>
+      <div class="bg6__info">
+        <div class="bg6__info-left">
+          <p>Теоретическая часть <span class="fs-45">}</span> <b><span class="fs-36">4</span> <span class="fs-27">недели</span></b></p>
+          <p>Практическая часть <span class="fs-45">}</span> <b><span class="fs-36">4</span> <span class="fs-27">недели</span></b></p>
+        </div>
+        <div class="bg6__info-right">
+          <p>
+            Мы предлагаем весьма обширную программу подготовки, которая включает в себя множество важнейших
+            тем, без знания которых невозможно стать тестировщиком. Мы научим вас не только этим знаниям, но и
+            практическим навыкам применять их в реальной рабочей среде.
+          </p>
+        </div>
+      </div>
+      <div class="bg6__steps">
+        <ul (mouseenter)="showImg()" (mousemove)="moveImg($event)" (mouseleave)="hideImg()">
+          <li
+            data-img="assets/internalship/img/bg6_img1.jpg"
+            (mouseenter)="activate($event.target, stepsImg)"
+            (mouseleave)="deactivate($event.target)"
+              ><span class="program-list-text">
+                <span class="upcase">Раздел 1</span> Основы тестирования
+              </span>
+          </li>
+          <br>
+
+          <li
+            data-img="assets/internalship/img/bg6_img2.jpg"
+            (mouseenter)="activate($event.target, stepsImg)"
+            (mouseleave)="deactivate($event.target)"
+              ><span class="program-list-text">
+                <span class="upcase">Раздел 2</span> Место тестирования в жизненном цикле ПО
+              </span>
+          </li>
+          <br>
+
+          <li
+            data-img="assets/internalship/img/bg6_img3.jpg"
+            (mouseenter)="activate($event.target, stepsImg)"
+            (mouseleave)="deactivate($event.target)"
+              ><span class="program-list-text">
+                <span class="upcase">Раздел 3</span> Теория тестирования
+              </span>
+          </li>
+          <br>
+
+          <li
+            data-img="assets/internalship/img/bg6_img4.jpg"
+            (mouseenter)="activate($event.target, stepsImg)"
+            (mouseleave)="deactivate($event.target)"
+              ><span class="program-list-text">
+                <span class="upcase">Раздел 4</span> Тестовая документация
+              </span>
+          </li>
+          <br>
+
+          <li
+            data-img="assets/internalship/img/bg6_img5.jpg"
+            (mouseenter)="activate($event.target, stepsImg)"
+            (mouseleave)="deactivate($event.target)"
+              ><span class="program-list-text">
+                <span class="upcase">Раздел 5</span> Виды приложение и их особенности
+              </span>
+          </li>
+          <br>
+
+          <li
+            data-img="assets/internalship/img/bg6_img6.jpg"
+            (mouseenter)="activate($event.target, stepsImg)"
+            (mouseleave)="deactivate($event.target)"
+              ><span class="program-list-text">
+                <span class="upcase">Раздел 6</span> Особенности мобильных ОС
+              </span>
+          </li>
+          <br>
+
+          <li
+            data-img="assets/internalship/img/bg6_img7.jpg"
+            (mouseenter)="activate($event.target, stepsImg)"
+            (mouseleave)="deactivate($event.target)"
+              ><span class="program-list-text">
+                <span class="upcase">Раздел 7</span> Инструменты тестирования
+              </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <img
+      #stepsImg
+      class="bg6__steps-img"
+      src="assets/internalship/img/bg6_img1.jpg"
+      [style]="imgPosition"
+      [style.visibility]="visibility"
+      alt=""
+    >
+  </section>

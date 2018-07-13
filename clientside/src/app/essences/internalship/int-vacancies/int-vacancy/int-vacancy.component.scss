@@ -1,0 +1,30 @@
+.vacancy__slide-title {
+    font-weight:  bold;
+    font-size:  38px;
+    color:  #092a4b;
+    margin-top: 17px;
+    margin-bottom:  0;
+    line-height:  46px;
+    z-index: 150;
+}
+
+@media only screen and (max-width: 1350px) {
+    .vacancy__slide-title {
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .vacancy__slide-title {
+        margin-top: 50px;
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .vacancy__slide-title {
+        margin-top: 50px;
+        font-size: 30px;
+    }
+}

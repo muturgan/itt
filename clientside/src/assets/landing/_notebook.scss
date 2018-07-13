@@ -1,0 +1,113 @@
+body.landing {
+  @media only screen and (max-width: 1220px) {
+    .header__contact-link {
+      white-space:  nowrap;
+    }
+
+    .header-nav__item {}
+
+    .header-nav__item a {
+      margin-right: 15px;
+    }
+
+    div#bg1 {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    .bg1__logo > * {
+      font-size: 50px;
+    }
+
+    .bg1__header {
+      font-size: 40px;
+    }
+
+    .bg1__desc {
+      font-size: 23px;
+    }
+
+    .bg1__logo img {
+      height:  60px;
+    }
+
+    .bg2__front-header {
+      font-size: 21px;
+    }
+
+    .bg2__front-desc {
+      font-size: 18px;
+    }
+
+    .bg2__back-header {
+      line-height:  44px;
+    }
+
+    div#bg2[data-open="tab-1"] .bg2__item[data-open="tab-2"] .front .bg2__front-header, div#bg2[data-open="tab-2"] .bg2__item[data-open="tab-1"] .front .bg2__front-header {
+      font-size: 23px;
+    }
+
+    div#bg2[data-open="tab-1"] .bg2__item[data-open="tab-2"] .front .bg2__front-desc, div#bg2[data-open="tab-2"] .bg2__item[data-open="tab-1"] .front .bg2__front-desc {
+      font-size: 17px;
+      line-height: 20px;
+    }
+
+    .bg2__back-item .body2tab {
+      padding-left: 0;
+      position:  relative;
+    }
+
+    .bg2__back-item .body2tab p {font-size: 15px;}
+
+    .bg2__back-item.tab2 {
+      padding-right:  .5rem;
+    }
+
+    .bg2__back-item.tab2:before {
+      display: none;
+    }
+
+    .bg2__back-header {
+      font-size: 30px;
+      margin-bottom: 0px !important;
+    }
+
+    .bg2__back-desc, .bg2__item[data-open="tab-2"] .bg2__back-desc {
+      margin-bottom:  10px;
+    }
+
+    #bg2 .close-tab {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+
+    .bg7__header {
+      font-size: 30px;
+    }
+
+    .bg7__desc {
+      font-size: 16px;
+    }
+
+    .bg7__link {
+      max-width: 33%;
+      line-height:  18px;
+      font-size:  16px;
+    }
+
+    .menu_m {
+      display:  none;
+    }
+
+    ul {}
+
+    .bg2__back-item:before {
+      display: none;
+    }
+
+    .bg2__back-item > * {
+      padding-left:  0;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+<div mdbModal #callbackModal="mdb-modal" class="modal fade" id="callbackModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <form [formGroup]="callbackForm" (ngSubmit)="onSubmit()">
+      <div class="modal-content">
+        <div class="modal-header bg-light justify-content-center">
+          <p class="heading lead h2">{{ 'callback.header' | translate }}</p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="callbackModal.hide()">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="md-form">
+            <i class="fa fa-user prefix grey-text"></i>
+            <input type="text"
+                   id="callbackModal-name"
+                   class="form-control"
+                   mdbActive
+                   [ngClass]="{
+                      'counter-danger': callbackForm.controls.name.touched && callbackForm.controls.name.invalid,
+                      'counter-success': callbackForm.controls.name.touched && callbackForm.controls.name.valid
+                   }"
+                   formControlName="name">
+            <label for="callbackModal-name">{{ 'callback.name' | translate }}</label>
+          </div>
+          <div class="md-form">
+            <i class="fa fa-envelope prefix grey-text"></i>
+            <input type="email"
+                   id="callbackModal-email"
+                   class="form-control"
+                   mdbActive
+                   [ngClass]="{
+                      'counter-danger': callbackForm.controls.email.touched && callbackForm.controls.email.invalid,
+                      'counter-success': callbackForm.controls.email.touched && callbackForm.controls.email.valid
+                   }"
+                   formControlName="email">
+            <label for="callbackModal-email">{{ 'callback.email' | translate }}</label>
+          </div>
+
+          <div class="md-form">
+            <i class="fa fa-comment prefix grey-text"></i>
+            <textarea id="callbackModal-desc"
+                      class="md-textarea"
+                      [ngClass]="{
+                        'counter-danger': callbackForm.controls.comment.touched && callbackForm.controls.comment.invalid,
+                        'counter-success': callbackForm.controls.comment.touched && callbackForm.controls.comment.valid
+                     }"
+                      mdbActive formControlName="comment"></textarea>
+            <label for="callbackModal-desc">{{ 'callback.comment' | translate }}</label>
+          </div>
+          <div class="md-form">
+            <input mdbDeepDirective
+                   type="checkbox"
+                   id="agreement"
+                   name="agreement"
+                   mdbActive
+                   formControlName="agree">
+            <label for="agreement">{{ 'callback.agreement' | translate }}</label>
+          </div>
+        </div>
+        <div class="modal-footer bg-dark justify-content-center">
+          <div class="text-center">
+            <button [disabled]="!callbackForm.valid"
+                    class="btn btn-warning waves-light"
+                    type="submit"
+                    mdbRippleRadius>
+              {{ 'callback.submit' | translate }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

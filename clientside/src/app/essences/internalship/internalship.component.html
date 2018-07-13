@@ -1,0 +1,139 @@
+  <div>
+    <app-int-header></app-int-header>
+    <main>
+      <div id="cronka" style="background-image: url(assets/internalship/img/cronka.png)"></div>
+
+      <app-int-entry></app-int-entry>
+      <app-int-vacancies></app-int-vacancies>
+      <app-int-snippet></app-int-snippet>
+      <app-int-offers></app-int-offers>
+      <app-int-expectations></app-int-expectations>
+      <app-int-program></app-int-program>
+      <app-int-how-it-works></app-int-how-it-works>
+      <app-int-daily-routine></app-int-daily-routine>
+    </main>
+    <app-int-footer></app-int-footer>
+
+    <div id="to_top" class="go__top" arrowTop="950" smoothScroll smoothHref="#header" href="#header">
+        <i class="fa fa-arrow-circle-o-up"></i>
+    </div>
+
+    <app-int-modals></app-int-modals>
+    
+    <!-- <div id="to_top" onclick="jQuery('body,html').animate({scrollTop: 0}, 1500);">
+      <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
+    </div> -->
+
+    <script type="text/javascript" src="../../../assets/internalship/js/jquery.min.js"></script>
+    <script src="../../../assets/internalship/js/slick.js" type="text/javascript" charset="utf-8"></script>
+
+     <script>
+      window.onload = function(){
+          /*
+              vacancy__slider slick bg2
+           */
+          jQuery('.vacancy__slider').slick({
+              dots: true,
+              //autoplay: true,
+              infinite: false,
+              slidesToShow: 1,
+              pauseOnHover: true
+          }).on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+              var elem = jQuery(slick.$slides[nextSlide]);
+              jQuery('.vacancy__slider-img').css({'background-image':'url('+elem.data('img')+')'});
+          });
+          jQuery('.vacancy__slider-img').css({'background-image':'url('+jQuery('#bg2').find('.vacancy__slide.slick-active').data('img')+')'});
+
+          /*
+              toggle rejim dnya
+           */
+          jQuery('.bg8__item:first-child').addClass('active');
+          jQuery('#bg8').css({'background-image':'url('+jQuery('.bg8__item:first-child').data('img')+')'});
+          jQuery('.bg8__item').hover(function(){
+              jQuery('#bg8').css({'background-image':'url('+jQuery(this).data('img')+')'});
+          });
+          jQuery('.bg8__item').on('click', function(){
+            jQuery('.bg8__item').removeClass('active');
+            jQuery(this).addClass('active');
+            jQuery('#bg8').css({'background-image':'url('+jQuery(this).data('img')+')'});
+          });
+
+          /*
+              Smooth Scroll
+           */
+          jQuery("body").on("click",".anchore", function (event) {
+              //отменяем стандартную обработку нажатия по ссылке
+              event.preventDefault();
+
+              //забираем идентификатор бока с атрибута href
+              var id  = jQuery(this).attr('href'),
+
+                  //узнаем высоту от начала страницы до блока на который ссылается якорь
+                  top = jQuery(id).offset().top - 60;
+
+              //анимируем переход на расстояние - top за 1500 мс
+              jQuery('body,html').animate({scrollTop: top}, 1500);
+          });
+
+          jQuery('.questions__form input').on('change', function(){
+              var inputs = jQuery('.questions__form').serializeArray();
+              var countAll = inputs.length;
+              var countNotEmpty = 0;
+              inputs.forEach(function(item, i, arr) {
+                  if(item.value != '') countNotEmpty++;
+              });
+              var proc = countNotEmpty / (countAll / 100);
+
+              var bgPosY = 160 - (1.9 * proc);
+              jQuery('.questions__form-footer .submit__button-process').css({'background-position-y':bgPosY+'px'});
+
+              if(proc > 98){
+                jQuery('.questions__form-footer .submit__button').addClass('active');
+                jQuery('.questions__form').find('.submit__button').on('click', function(){
+                  jQuery('.questions__form').submit();
+                  });
+              } else {
+                jQuery('.questions__form-footer .submit__button').removeClass('active');
+              }
+          });
+
+          jQuery('.bg7__item-link').on('click', function() {
+            jQuery('#bg7').toggleClass('questions_form');
+          });
+      };
+
+      function toggleMenu(){
+        jQuery('nav.header-menu').toggleClass('active');
+      }
+      
+      jQuery('#bg6 .cont').mousemove(function (pos) { 
+        jQuery(".bg6__steps-img").css('left',(pos.pageX+20)+'px').css('top',(pos.pageY+20)+'px'); 
+      }); 
+      
+      jQuery('.bg6__steps li').hover(function(){
+        jQuery('.bg6__steps li').removeClass('active');
+        jQuery(this).addClass('active');
+          var img = jQuery(this).data('img');
+          jQuery('.bg6__steps-img').attr('src', img);
+      });
+      
+      if (jQuery(window).scrollTop() > 0) {
+          jQuery('header').addClass('active');
+      } else {
+          jQuery('header').removeClass('active');
+      }
+      jQuery(window).scroll(function () {
+          if (jQuery(this).scrollTop() > 0) {
+              jQuery('header').addClass('active');
+          } else {
+              jQuery('header').removeClass('active');
+          }
+          if (jQuery(this).scrollTop() > 1000) {
+              jQuery('#to_top').addClass('active');
+          } else {
+              jQuery('#to_top').removeClass('active');
+          }
+      });
+      
+      
+  </script>

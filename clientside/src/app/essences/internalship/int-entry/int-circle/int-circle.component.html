@@ -1,0 +1,8 @@
+<div class="bg1__item">
+  <div (mouseenter)="changeBackground()" class="bg1__circle anchore" attr.href="{{circleData.href}}">
+    <div class="bg1__circle-body">
+      <div *ngIf="circleData.subheaderText" class="bg1__circle-subheader"> {{ circleData.subheaderText }} </div>
+      <div class="bg1__circle-header"> {{ circleData.headerText }} </div>
+    </div>
+  </div>
+</div>

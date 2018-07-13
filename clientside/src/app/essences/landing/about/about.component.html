@@ -1,0 +1,183 @@
+<div id="bg2" class="container-fluid" [attr.data-open]="active">
+  <div class="row">
+    <div class="col-lg-6 bg2__item view" data-open="tab-1">
+      <div class="front blur_block_bg">
+        <p class="bg2__front-header">{{ 'about.0.frontHeader' | translate }}</p>
+        <p class="bg2__front-desc">{{ 'about.0.frontDesc' | translate }}</p>
+        <a (click)="active = 'tab-1'" class="bg2__front-link btn btn-warning">{{ 'about.0.frontLink' | translate }}</a>
+      </div>
+      <div class="back">
+        <a class="close-tab" (click)="active = ''"><i class="fa fa-times" aria-hidden="true"></i></a>
+        <p class="bg2__back-header">{{ 'about.0.backHeader' | translate }}</p>
+        <p class="bg2__back-desc">{{ 'about.0.backDesc' | translate }}</p>
+        <div class="row bg2__back-items">
+          <div class="col-md-4 bg2__back-item">
+            <p [innerHTML]="'about.0.backItems.0' | translate"></p>
+          </div>
+          <div class="col-md-4 bg2__back-item">
+            <p [innerHTML]="'about.0.backItems.1' | translate"></p>
+          </div>
+          <div class="col-md-4 bg2__back-item">
+            <p [innerHTML]="'about.0.backItems.2' | translate"></p>
+          </div>
+          <div class="col-md-4 bg2__back-item">
+            <p [innerHTML]="'about.0.backItems.3' | translate"></p>
+          </div>
+          <div class="col-md-4 bg2__back-item">
+            <p [innerHTML]="'about.0.backItems.4' | translate"></p>
+          </div>
+        </div>
+        <div class="row bg2__back1-footer">
+          <div class="col-md-4">
+            <p class="bg2__back1-footer-header">{{ 'about.0.backFooter.0.header' | translate }} –</p>
+            <p class="bg2__back1-footer-desc">{{ 'about.0.backFooter.0.desc' | translate }}</p>
+          </div>
+          <div class="col-md-4">
+            <p class="bg2__back1-footer-header">{{ 'about.0.backFooter.1.header' | translate }} –</p>
+            <p class="bg2__back1-footer-desc">{{ 'about.0.backFooter.1.desc' | translate }}</p>
+          </div>
+          <div class="col-md-4">
+            <p class="bg2__back1-footer-header">{{ 'about.0.backFooter.2.header' | translate }} –</p>
+            <p class="bg2__back1-footer-desc">{{ 'about.0.backFooter.2.desc' | translate }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="mask flex-center rgba-grey-light"></div>
+    </div>
+    <div class="col-lg-6 bg2__item view"  data-open="tab-2">
+      <div class="front blur_block_bg">
+        <p class="bg2__front-header">{{ 'about.1.frontHeader' | translate }}</p>
+        <p class="bg2__front-desc">{{ 'about.1.frontDesc' | translate }}</p>
+        <a (click)="active = 'tab-2'" class="bg2__front-link btn btn-warning">{{ 'about.1.frontLink' | translate }}</a>
+      </div>
+      <div class="back">
+        <a class="close-tab" (click)="active = ''"><i class="fa fa-times" aria-hidden="true"></i></a>
+        <p class="bg2__back-header">{{ 'about.1.backHeader' | translate }}</p>
+        <p class="bg2__back-desc">{{ 'about.1.backDesc' | translate }}</p>
+        <div class="row bg2__back-items">
+          <div class="col-md-4 bg2__back-item tab2">
+            <div class="body2tab">
+              <p>{{ 'about.1.backItems.0.text' | translate }}</p>
+              <p class="sm">{{ 'about.1.backItems.0.ms' | translate }}</p>
+            </div>
+          </div>
+          <div class="col-md-4 bg2__back-item tab2">
+            <div class="body2tab">
+              <p>{{ 'about.1.backItems.1.text' | translate }}</p>
+              <p class="sm">{{ 'about.1.backItems.1.ms' | translate }}</p>
+            </div>
+          </div>
+          <div class="col-md-4 bg2__back-item tab2">
+            <div class="body2tab">
+              <p>{{ 'about.1.backItems.2.text' | translate }}</p>
+              <p class="sm">{{ 'about.1.backItems.2.ms' | translate }}</p>
+            </div>
+          </div>
+          <div class="col-md-4 bg2__back-item tab2">
+            <div class="body2tab">
+              <p>{{ 'about.1.backItems.3.text' | translate }}</p>
+              <p class="sm">{{ 'about.1.backItems.3.ms' | translate }}</p>
+            </div>
+          </div>
+          <div class="col-md-4 bg2__back-item tab2">
+            <div class="body2tab">
+              <p>{{ 'about.1.backItems.4.text' | translate }}</p>
+              <p class="sm">{{ 'about.1.backItems.4.ms' | translate }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="row bg2__back2-footer">
+          <p class="bg2__back2-footer-mheader">{{ 'about.1.footerHeader' | translate }}</p>
+          <div class="col-md-4">
+            <!--<p class="bg2__back2-footer-header">Языки программирования</p>-->
+            <div class="bg2__back2-footer-desc row justify-content-start text-center  pl-2 pr-2">
+              <div class="col-md-3 col-sm-1 col-3 mt-2">
+                <img width="45" src="/assets/devicon/javascript/javascript-original.svg" alt="JavaScript" mdbTooltip="JavaScript" placement="top">
+              </div>
+              <div class="col-md-3 col-sm-1 col-3 mt-2">
+                <img width="45" src="/assets/devicon/csharp/csharp-original.svg" alt="C#" mdbTooltip="C#" placement="top">
+              </div>
+              <div class="col-md-3 col-sm-1 col-3 mt-2">
+                <img width="45" src="/assets/devicon/cplusplus/cplusplus-original.svg" alt="C++" mdbTooltip="C++" placement="top">
+              </div>
+              <div class="col-md-3 col-sm-1 col-3 mt-2">
+                <img width="45" src="/assets/devicon/python/python-original.svg" alt="Python" mdbTooltip="Python" placement="top">
+              </div>
+              <div class="col-md-3 col-sm-1 col-3 mt-2">
+                <img width="45" src="/assets/devicon/java/java-original.svg" alt="Java" mdbTooltip="Java" placement="top">
+              </div>
+              <div class="col-md-3 col-sm-1 col-3 mt-2">
+                <img width="45" src="/assets/devicon/php/php-original.svg" alt="PHP" mdbTooltip="PHP" placement="top">
+              </div>
+              <div class="col-md-3 col-sm-1 col-3 mt-2">
+                <img width="45" src="/assets/devicon/symfony/symfony-original-wordmark.svg" alt="Symfony" mdbTooltip="Symfony" placement="top">
+              </div>
+              <div class="col-md-3 col-sm-1 col-3 mt-2">
+                <img width="45" src="/assets/devicon/go/go-original.svg" alt="Go" mdbTooltip="Go" placement="top">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <!--<p class="bg2__back2-footer-header">Технологии</p>-->
+            <div class="bg2__back2-footer-desc row justify-content-start text-center  pl-2 pr-2">
+              <div class="col-md-3 col-sm-1 col-3 mt-2">
+                <img width="45" src="/assets/devicon/nodejs/nodejs-original.svg" alt="NodeJs" mdbTooltip="NodeJs" placement="top">
+              </div>
+              <div class="col-md-3 col-sm-1 col-3 mt-2">
+                <img width="45" src="/assets/devicon/angularjs/angularjs-original.svg" alt="AngularJs" mdbTooltip="AngularJs" placement="top">
+              </div>
+              <div class="col-md-3 col-sm-1 col-3 mt-2">
+                <img width="45" src="/assets/devicon/laravel/laravel-plain-wordmark.svg" alt="Laravel" mdbTooltip="Laravel" placement="top">
+              </div>
+              <div class="col-md-3 col-sm-1 col-3 mt-2">
+                <img width="45" src="/assets/devicon/html5/html5-original.svg" alt="HTML5" mdbTooltip="HTML5" placement="top">
+              </div>
+              <div class="col-md-3 col-sm-1 col-3 mt-2">
+                <img width="45" src="/assets/devicon/css3/css3-original.svg" alt="CSS3" mdbTooltip="CSS3" placement="top">
+              </div>
+              <div class="col-md-3 col-sm-1 col-3 mt-2">
+                <img width="45" src="/assets/devicon/jquery/jquery-original.svg" alt="Jquery" mdbTooltip="Jquery" placement="top">
+              </div>
+              <div class="col-md-3 col-sm-1 col-3 mt-2">
+                <img width="45" src="/assets/devicon/vuejs/vuejs-original.svg" alt="VueJs" mdbTooltip="VueJs" placement="top">
+              </div>
+              <div class="col-md-3 col-sm-1 col-3 mt-2">
+                <img class="mr-4" width="45" src="/assets/devicon/react/react-original.svg" alt="ReactJs" mdbTooltip="ReactJs" placement="top">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <!--<p class="bg2__back2-footer-header">Базы данных</p>-->
+            <div class="bg2__back2-footer-desc row justify-content-start text-center pl-2 pr-2">
+              <div class="col-md-3 col-sm-1 col-3 mt-2">
+                <img width="45" src="/assets/devicon/mysql/mysql-original-wordmark.svg"  alt="MySQL" mdbTooltip="MySQL" placement="top">
+              </div>
+              <div class="col-md-3 col-sm-1 col-3 mt-2">
+                <img width="45" src="/assets/devicon/postgresql/postgresql-original-wordmark.svg"  alt="PostgreeSQL" mdbTooltip="PostgreeSQL" placement="top">
+              </div>
+              <div class="col-md-3 col-sm-1 col-3 mt-2">
+                <img width="45" src="/assets/devicon/mongodb/mongodb-original-wordmark.svg"  alt="MongoDB" mdbTooltip="MongoDB" placement="top">
+              </div>
+              <div class="col-md-3 col-sm-1 col-3 mt-2">
+                <img width="45" src="/assets/devicon/redis/redis-original-wordmark.svg"  alt="Redis" mdbTooltip="Redis" placement="top">
+              </div>
+              <div class="col-md-3 col-sm-1 col-3 mt-2">
+                <img width="45" src="/assets/devicon/git/git-original-wordmark.svg"  alt="Git" mdbTooltip="Git" placement="top">
+              </div>
+              <div class="col-md-3 col-sm-1 col-3 mt-2">
+                <img width="45" src="/assets/devicon/django/django-original.svg"  alt="Django" mdbTooltip="Django" placement="top">
+              </div>
+              <div class="col-md-3 col-sm-1 col-3 mt-2">
+                <img width="45" src="/assets/devicon/webpack/webpack-original.svg"  alt="Webpack" mdbTooltip="Webpack" placement="top">
+              </div>
+              <div class="col-md-3 col-sm-1 col-3 mt-2">
+                <img width="45" src="/assets/devicon/swift/swift-original.svg" alt="Swift" mdbTooltip="Swift" placement="top">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mask flex-center rgba-black-light"></div>
+    </div>
+  </div>
+</div>

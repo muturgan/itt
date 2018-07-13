@@ -1,0 +1,17 @@
+<!-- <section id="bg8" [style.background-image]="currentSectionBackgroundImgPath"> -->
+<section id="bg8" [style.background-image]="currentSectionBackgroundImgPath">
+  <div class="cont">
+    <p class="bg8-header">Примерный распорядок дня:</p>
+    <div class="bg8__items">
+
+    <app-int-daily-routine-item
+      *ngFor="let lessonData of routineData"
+      [lessonData]="lessonData"
+      (currentImgChanged)="setCurrentImg($event)"
+      (defaultImgChanged)="setDefaultImg($event)"
+      (activeLessonChanged)="setActiveLesson($event)"
+    ></app-int-daily-routine-item>
+
+    </div>
+  </div>
+</section>

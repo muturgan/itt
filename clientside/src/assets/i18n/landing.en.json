@@ -1,0 +1,224 @@
+{
+  "header": {
+    "menu": [
+      {
+        "text": "Services",
+        "link": "#bg2"
+      },
+      {
+        "text": "About Us",
+        "link": "#bg3"
+      },
+      {
+        "text": "Join Us",
+        "href": "https://tula.hh.ru/employer/2184769"
+      },
+      {
+        "text": "Partners",
+        "link": "#bg6"
+      },
+      {
+        "text": "Internship",
+        "href": "https://ittest-team.ru/internship/"
+      },
+      {
+        "text": "Contact Us",
+        "link": "#map"
+      }
+    ],
+    "contact": {
+      "email": "office@ittest-team.ru",
+      "phone": "+7 (4872) 52-59-50"
+    }
+  },
+  "mainBanner": {
+    "logo": "IT TEST",
+    "header": "Software development and quality assurance",
+    "desc": "information system quality control"
+  },
+  "about": [
+    {
+      "frontHeader": "Q/A",
+      "frontDesc": "Quality expertise",
+      "frontLink": "More",
+      "backHeader": "Information system quality assurance",
+      "backDesc": "Quality expertise",
+      "backItems": [
+        "Functional <br> testing",
+        "Stress <br> testing",
+        "Automated <br> testing",
+        "Acceptance <br> testing",
+        "Complex <br> system testing"
+      ],
+      "backFooter": [
+        {
+          "header": "Quality",
+          "desc": "our experience assures the highest possible quiality of testing"
+        },
+        {
+          "header": "Cost Saving",
+          "desc": "our prices will pleasantly impress you"
+        },
+        {
+          "header": "High Performance",
+          "desc": "We are a team of seasoned professionals who work to the best of their ability"
+        }
+      ]
+    },
+    {
+      "frontHeader": "Software development",
+      "frontDesc": "Frontier technologies",
+      "frontLink": "More",
+      "backHeader": "Software development",
+      "backDesc": "Frontier technologies",
+      "backItems": [
+        {
+          "text": "Web applications",
+          "ms": "Services, E-commerce and complex systems"
+        },
+        {
+          "text": "Startups",
+          "ms": "We make your dreams a reality"
+        },
+        {
+          "text": "Desktop applications",
+          "ms": "Windows, MacOS, Linux"
+        },
+        {
+          "text": "Mobile applications: Android, iOS",
+          "ms": "Complex solutions"
+        },
+        {
+          "text": "High load web services",
+          "ms": "We are capable of producing services able to handle heavy loads"
+        }
+      ],
+      "footerHeader": "Our technology stack"
+    }
+  ],
+  "expertise": {
+    "header": "Our expertise",
+    "list": [
+      "Web",
+      "Banks and finance",
+      "Blockchain/criptocurrency",
+      "E-learning",
+      "Geo-tracking and navigations",
+      "Messengers and bots",
+      "Industry",
+      "Machine learning",
+      "Integration projects",
+      "Sport & Health"
+    ]
+  },
+  "howItWorks": {
+    "header": "Our approach",
+    "desc": "We approach our clients individually",
+    "items": [
+      {
+        "header": "Dedicated team",
+        "desc": "Perfect choice when it comes to medium- and large-sized projects implying the implementation of multiple technical solutions and devotion to work"
+      },
+      {
+        "header": "Service support",
+        "desc": "Our company provides full support for the project through all the stages of its life cycle. Our free consultations will help you with maintenance"
+      },
+      {
+        "header": "Project approach",
+        "desc": "Becomes possible in small and medium-sized projects with budgetary and time constraints. We provide our clients with detailed and precise estimates of the resources"
+      },
+      {
+        "header": "T&M",
+        "desc": "Most suitable for medium- and large-sized projects as well as for creative people striving to build new projects"
+      }
+    ]
+  },
+  "theses": [
+    {
+      "header": "Agile methodology",
+      "desc": "We have a long experience applying agile software development methodology to project management"
+    },
+    {
+      "header": "Individual approach",
+      "desc": "Each client and project is specific. We offer flexibility in contracting and payment methods"
+    },
+    {
+      "header": "Customer support",
+      "desc": "Work with clients from all the time zones. We are capable of solving your problems and providing immediate consultations on any of your issues"
+    },
+    {
+      "header": "Full support",
+      "desc": "Starting from the superficial business analysis based on our rich exsperience in software development, designing software, architecture"
+    }
+  ],
+  "partners": "Our partners",
+  "map": {
+    "footer": "Our contacts",
+    "items": {
+      "phone": {
+        "text": "Phone",
+        "value": "+7 (4872) 52-59-50"
+      },
+      "email": {
+        "text": "E-mail",
+        "value": "office@ittest-team.ru"
+      },
+      "address": {
+        "text": "Address",
+        "value": "4th floor 13 Turgenevskaya Tula 300041 Russia"
+      }
+    },
+    "bgHeader": "How to reach us",
+    "bgDesc": "Choose your preferred way",
+    "faVk": {
+      "text": "Vkontakte",
+      "href": ""
+    },
+    "faFacebook": {
+      "text": "Facebook",
+      "href": ""
+    },
+    "faPencil": {
+      "text": "Contact us",
+      "href": ""
+    }
+  },
+  "footer": {
+    "menu": [
+      {
+        "text": "Services",
+        "link": "#bg2"
+      },
+      {
+        "text": "About Us",
+        "link": "#bg3"
+      },
+      {
+        "text": "Join Us",
+        "href": "https://tula.hh.ru/employer/2184769"
+      },
+      {
+        "text": "Partners",
+        "link": "#bg6"
+      },
+      {
+        "text": "Internship",
+        "href": "https://ittest-team.ru/internship/"
+      },
+      {
+        "text": "Contact Us",
+        "link": "#map"
+      }
+    ]
+  },
+  "callback": {
+    "header": "Feedback",
+    "name": "Your name",
+    "email": "Your email",
+    "comment": "Comment",
+    "agreement": "Hereby I agree to process my personal data.",
+    "submit": "Contact us",
+    "message": "Thank you for contacting us",
+    "messageError": "Something went wrong"
+  }
+}

@@ -1,0 +1,115 @@
+.bg1__item {display: inline-block;vertical-align:  middle;height:  430px;width: 430px;position: relative;margin-left: 34px;margin-right: 34px;}
+
+.bg1__circle-body {display:  table-cell;vertical-align:  middle;position:  relative;z-index:  2;}
+
+.bg1__circle:before {
+    content:  '';
+    position:  absolute;
+    width: calc(100% - 74px);
+    height: calc(100% - 74px);
+    left:  0;
+    top: 0;
+    right:  0;
+    bottom:  0;
+    margin:  auto;
+    border-radius:  50%;
+    background-color:  rgba(255,255,255,.8);
+    -webkit-transition: .25s all ease-in-out;
+    -moz-transition: .25s all ease-in-out;
+    -o-transition: .25s all ease-in-out;
+    transition: .25s all ease-in-out;
+}
+
+.bg1__circle {
+    height:  100%;
+    width:  100%;
+    display:  table;
+    padding: 37px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,.5);
+    cursor:  pointer;
+    font-family: 'Azoft Sans';
+}
+
+.bg1__circle:hover {
+    background-color: rgba(255,255,255,.2);
+}
+
+.bg1__circle:hover:before {
+    background-color: rgba(255,255,255,.5);
+}
+
+.bg1__circle-subheader {
+    font-size:  20px;
+    color:  #092a4b;
+    text-transform:  uppercase;
+    letter-spacing:  .2em;
+    font-weight:  bold;
+    margin-bottom:  13px;
+}
+
+.bg1__circle-header {
+    font-size:  42px;
+    color: #092a4b;
+    font-weight:  bold;
+}
+
+@media only screen and (max-width: 1350px) {
+    .bg1__item {
+        height: 330px;
+        width: 330px;
+    }
+
+    .bg1__circle-subheader {
+        font-size: 14px;
+    }
+
+    .bg1__circle-header {
+        font-size: 29px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .bg1__item {
+        height: 330px;
+        width: 330px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .bg1__item {
+        width:  300px;
+        height:  300px;
+        margin-bottom:  20px;
+    }
+
+    .bg1__circle {
+        margin-bottom:  20px;
+        float:  none;
+    }
+
+    .bg1__circle:before {
+        width: calc(100% - 50px);
+        height: calc(100% - 50px);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .bg1__item {
+        width:  300px;
+        height:  300px;
+        margin-bottom:  20px;
+    }
+
+    .bg1__circle {
+        margin-bottom:  20px;
+        float:  none;
+    }
+
+    .bg1__circle:before {
+        width: calc(100% - 50px);
+        height: calc(100% - 50px);
+    }
+}

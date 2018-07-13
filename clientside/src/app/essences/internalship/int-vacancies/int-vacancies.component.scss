@@ -1,0 +1,98 @@
+.vacancy__slider-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: nowrap;
+
+}
+
+.vacancy-flex-item {
+    margin: 0;
+    flex-wrap: nowrap;
+}
+
+.vacancy-snippet {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.vacancy-snippet-item {
+    margin: 0;
+    padding: 0;
+    // flex-basis: 16%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+#vacancy-toggler-holder {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+// .vacancy-snippet-item .vacancy-header {
+//     justify-content: flex-end;
+//     padding: 0;
+// }
+
+// .vacancy-snippet-item .vacancy-salary {
+//     justify-content: flex-start;
+//     margin-top: 0;
+// }
+
+.vacancy-snippet {
+    flex-basis: 40%;
+}
+
+.vacancy__slider-img {
+    flex-basis: 60%;
+}
+
+.vacancy-salary {
+    line-height:  26px;
+    font-size:  18px;
+    color:  #092a4b;
+    margin-top:  29px;
+    margin-bottom:  0;
+}
+
+.vacancy-experience,
+.vacancy-internship {
+    font-size:  20px;
+    color:  #092a4b;
+    margin-bottom: 14px;
+    margin-top:  0;
+    font-weight:  300;
+}
+
+.vacancy-toggler {
+    flex-basis: 14px;
+    width: 14px;
+    height: 14px;
+    margin: 0 4px 0 4px;
+    background-color: rgb(189,188,188);
+    cursor: pointer;
+}
+
+#vacancy-toggler-holder .active {
+    background-color: rgb(255,220,4);
+}
+
+.vacancy-flex-item .vacancy-snippet-item p {
+    padding: 0;
+}
+
+#header-item {
+    justify-content: flex-end;
+}
+
+#salary-item {
+    justify-content: flex-start;
+}

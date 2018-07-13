@@ -1,0 +1,20 @@
+<app-alert></app-alert>
+<!--Body-->
+<div class="modal-body mb-1" [@fadeInAnimation]>
+    <form name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+        <div class="md-form form-sm">
+            <i class="fa fa-envelope prefix"></i>
+            <input mdbActive type="text" name="email" id="form22" [(ngModel)]="user.email" #email="ngModel" class="form-control">
+            <label for="form22">Your email</label>
+        </div>
+
+        <div class="md-form form-sm">
+            <i class="fa fa-lock prefix"></i>
+            <input mdbActive type="password" name="password" id="form23" [(ngModel)]="user.password" #password="ngModel" class="form-control">
+            <label for="form23">Your password</label>
+        </div>
+        <div class="text-center mt-2">
+            <button class="btn btn-info waves-light" mdbRippleRadius>Log in <i class="fa fa-sign-in ml-1"></i></button>
+        </div>
+    </form>
+</div>

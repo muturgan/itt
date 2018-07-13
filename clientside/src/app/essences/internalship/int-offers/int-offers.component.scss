@@ -1,0 +1,34 @@
+.bg4__line-col:before {
+    content: '+';
+    display: block;
+    position:  absolute;
+    top: 0;
+    left:  0;
+    height:  102px;
+    width:  102px;
+    text-align:  center;
+    line-height: 85px;
+    color:  white;
+    font-size: 75px;
+    background-color:  #e94931;
+    z-index:  2;
+}
+
+.bg4__line-col:hover .bg4__col-desc {
+    opacity:  1;
+}
+
+.bg4__line-col:hover:before {
+    content:  '-';
+}
+
+.bg4__line-col:hover .bg4__col-desc ul {
+    display:  block;
+}
+
+.bg4__line-col:before {
+    font-size: 52px;
+    height: 70px;
+    width: 70px;
+    line-height: 59px;
+}
